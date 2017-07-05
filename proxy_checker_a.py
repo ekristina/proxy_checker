@@ -4,8 +4,9 @@ import csv
 import aiohttp
 
 WEBSITE = 'https://www.google.com'
+OUT_FILE_NAME = 'proxy_timeouts.txt'
 
-with open('proxy_timeouts.txt', 'w') as exit_file:
+with open(OUT_FILE_NAME, 'w') as exit_file:
 
     async def fetch(proxy):
         try:
